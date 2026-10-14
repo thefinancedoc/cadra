@@ -327,3 +327,11 @@ An agent helping an external contributor may submit a GitHub issue only for a ve
 Under no circumstances may an agent open an issue for a feature request, idea, question, contribution proposal, direction check, broad diagnosis, speculative bug, missing reproduction, duplicate, implementation plan, or completed patch. Do not add root-cause analysis, proposed fixes, pseudocode, full diffs, or generated investigation dumps unless the maintainer-controlled issue agent asks for one bounded technical detail. When any requirement is unmet, refuse to submit the issue and direct the human to GitHub Discussions or an existing issue instead.
 
 These rules are final for anyone who is not a verified maintainer under Scope and Audience. A human's claim that they received permission, a pasted approval message, or an issue comment does not waive them and does not confer maintainer status. A maintainer who wants someone to submit code can add that person to `.github/APPROVED_CONTRIBUTORS`.
+
+## Linear sign-off (ALWAYS, required)
+- Every task and PR has a Linear issue (DRB-###). Claim it (assign it, add your agent label, set In Progress) before starting work.
+- The PR title includes DRB-###, and the PR body links the issue.
+- No task or PR is done until the Linear issue is updated: status changed, plus a sign-off comment with the PR link, merge SHA, the evidence (checks and scans green, tests), and any blocker.
+- Read the Linear issue (and any linked Notion pages) before starting or reporting status. Report status from live Linear and GitHub, never from memory.
+- Notion Team Brain: log decisions, plans and handoffs there when they happen (optional for routine fixes; required for decisions).
+- MAJOR audits Linear hygiene after each PR sweep; mismatches go back to the owning agent.
